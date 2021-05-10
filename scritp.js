@@ -4,7 +4,7 @@ const contend = document.querySelector('#contenido');
 const reconocer_voz = window.SpeechRecognition || window.webkitSpeechRecognition;
 const reconocer = new reconocer_voz();
 reconocer.onstart = function () {
-    console.log('El microfono esta activo');
+    alert('El microfono esta activo');
 }
 
 reconocer.onresult = function (event) {

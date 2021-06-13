@@ -1,5 +1,15 @@
+
+/**
+ * El id hablar es viculado con el boton
+ */
+
 const boton = document.querySelector('#hablar');
+
+/**
+ * El id contenido es para el input
+ */
 const contend = document.querySelector('#contenido');
+
 
 const reconocer_voz = window.SpeechRecognition || window.webkitSpeechRecognition;
 const reconocer = new reconocer_voz();

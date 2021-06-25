@@ -9,3 +9,8 @@ h1 {
     font-style:oblique
 }
 
+img {
+    height: 100px;
+    width: auto;
+    padding-left: 100px;
+}

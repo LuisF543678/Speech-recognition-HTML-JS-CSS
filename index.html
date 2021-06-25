@@ -26,10 +26,14 @@
                         aria-describedby="inputGroup-sizing-lg" id="contenido">
                 </div>
                 <div class="d-grid gap-2 col-6 mx-auto">
-                    <button class="btn btn-success btn-lg mt-3" id="hablar">Presione para escuchar</button>
+                    <button class="btn btn-success btn-lg mt-3" id="hablar" onclick="picture()">Presione para escuchar
+                        <img id="bigpic" src="audio_gif.gif" style="display:none;" />
+                    </button>
+
                 </div>
             </div>
 
+           <!--  <button class="btn btn-primary" onclick="picture()">Enlarge</button> -->
         </div>
     </div>
     <script src="script_recognition.js"></script>

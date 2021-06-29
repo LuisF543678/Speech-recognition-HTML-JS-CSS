@@ -10,13 +10,18 @@ const boton = document.querySelector('#hablar');
  */
 const contend = document.querySelector('#contenido');
 
-
+/**
+ * Consumir la api de js speech recognition
+ */
 const reconocer_voz = window.SpeechRecognition || window.webkitSpeechRecognition;
 const reconocer = new reconocer_voz();
 reconocer.onstart = function () {
     alert('El microfono esta activo');
 }
 
+/**
+ * Mostrar la transcriccion
+ */
 reconocer.onresult = function (event) {
     //console.log(event);
     const current = event.resultIndex;
@@ -29,10 +34,12 @@ boton.addEventListener('click', () => {
     reconocer.start();
 });
 
+/**
+ * Add gif audio
+ */
 
 function picture() {
     var pic = "assets/audio_gif.gif"
     document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
     document.getElementById('bigpic').style.display = 'block';
-
 }

@@ -31,7 +31,7 @@ boton.addEventListener('click', () => {
 
 
 function picture() {
-    var pic = "audio_gif.gif"
+    var pic = "assets/audio_gif.gif"
     document.getElementById('bigpic').src = pic.replace('90x90', '225x225');
     document.getElementById('bigpic').style.display = 'block';
 
